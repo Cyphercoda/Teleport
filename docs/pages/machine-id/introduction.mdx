@@ -1,0 +1,51 @@
+---
+title: Machine ID
+description: Teleport Machine ID introduction, demo and resources.
+---
+
+Machine ID is a service that programmatically issues and renews short-lived
+certificates to any service account (e.g., a CI/CD server) by retrieving
+credentials from the Teleport Auth Service. This enables fine-grained
+role-based access controls and audit.
+
+<iframe
+  width="712"
+  height="400"
+  src="https://www.youtube-nocookie.com/embed/QWd0eqIa9mA?"
+  frameBorder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
+<br/>
+
+Machine ID supports the following Teleport features:
+
+- [Server Access](./getting-started.mdx)
+- [Database Access](./guides/databases.mdx)
+- [Kubernetes Access](./guides/kubernetes.mdx) (*in Teleport v10.1*)
+- [Application Access](./guides/applications.mdx) (*in Teleport v10.1*)
+  - Note: [AWS Console](../application-access/cloud-apis/aws-console.mdx) and API access are currently unsupported.
+- [Teleport API Access](../api/introduction.mdx)
+
+These features are supported in Teleport Enterprise and Teleport Cloud.
+
+The following features are **not** yet supported by Machine ID:
+- [Desktop Access](../desktop-access/introduction.mdx)
+- [User Impersonation](../access-controls/guides/impersonation.mdx): Machine
+  ID uses Role Impersonation which cannot be combined with User Impersonation
+- Multifactor authentication like [WebAuthn](../access-controls/guides/webauthn.mdx) and [Passwordless](../access-controls/guides/passwordless.mdx)
+- [AWS Console Access](../application-access/cloud-apis/aws-console.mdx)
+
+## Getting started
+
+- [Getting started](./getting-started.mdx): Getting started with Teleport Machine ID
+- [Architecture](./architecture.mdx): A technical overview of how Machine ID works
+
+## Guides
+
+(!docs/pages/includes/machine-id/guides.mdx!)
+
+## FAQ & Troubleshooting
+
+Finally, check out [Frequently Asked Questions](./faq.mdx) and the 
+[troubleshooting guide](./troubleshooting.mdx) for common questions and issues.
